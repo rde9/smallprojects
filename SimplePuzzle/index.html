@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Puzzle</title>
+</head>
+<body>
+    <div id="droptarget" class="droptarget">
+        <span>拖拽图片到这里<br>若初次显示不正常请点击刷新页面</span>
+    </div>
+    <ul id="ul1">
+    </ul>
+<div id="toolbar">
+    <span id="cnt"></span>
+    <button class="btn" id="b1" onclick="sessionStorage.clear(); location.reload();">重置</button>
+    <button class="btn" id="b2" onclick="location.reload();">刷新页面</button>
+</div>
+<script src="js/EventUtil.js"></script>
+<script src="js/move.js"></script>
+<script src="js/window.js"></script>
+</body>
+</html>
